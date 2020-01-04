@@ -32,7 +32,18 @@ public static void main(String[] args) {
 	System.out.println("-----------------------------");
 	System.out.println(nv2);
 	System.out.println("-----------------------------");
+	// xài hàm
 	if (nv1.LonHon(nv2)) { 
+		System.out.println("Nhân viên "+nv1.getHo()+" "+ nv1.getTen()+" có số sản phẩm nhiều hơn nhân viên "+nv2.getHo()+" "+ nv2.getTen());
+		System.out.println("Số sản phẩm nhiều hơn là: "+ (nv1.getSoSanPham()-nv2.getSoSanPham()));
+	}
+	else {
+		System.out.println("Nhân viên "+nv2.getHo()+" "+ nv2.getTen()+" có số sản phẩm nhiều hơn "+nv1.getHo()+" "+ nv1.getTen());
+		System.out.println("Số sản phẩm nhiều hơn là: "+ (nv2.getSoSanPham()-nv1.getSoSanPham()));
+	}
+	System.out.println("-----------------------------");
+	// không xài hàm
+	if (nv1.getSoSanPham()>nv2.getSoSanPham()) { 
 		System.out.println("Nhân viên "+nv1.getHo()+" "+ nv1.getTen()+" có số sản phẩm nhiều hơn nhân viên "+nv2.getHo()+" "+ nv2.getTen());
 		System.out.println("Số sản phẩm nhiều hơn là: "+ (nv1.getSoSanPham()-nv2.getSoSanPham()));
 	}
